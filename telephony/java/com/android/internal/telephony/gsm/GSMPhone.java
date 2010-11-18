@@ -841,7 +841,8 @@ public class GSMPhone extends PhoneBase {
     }
 
     public String getDeviceId() {
-        return mImei;
+        /* return mImei; */
+        return "000000000000000";
     }
 
     public String getDeviceSvn() {

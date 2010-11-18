@@ -447,7 +447,7 @@ public class Tethering extends INetworkManagementEventObserver.Stub {
 
     // used on cable insert/remove
     private void enableUsbIfaces(boolean enable) {
-        IBinder b = ServiceManager.getService(Context.NETWORKMANAGEMENT_SERVICE);
+        /*IBinder b = ServiceManager.getService(Context.NETWORKMANAGEMENT_SERVICE);
         INetworkManagementService service = INetworkManagementService.Stub.asInterface(b);
         String[] ifaces = new String[0];
         try {
@@ -464,7 +464,7 @@ public class Tethering extends INetworkManagementEventObserver.Stub {
                     interfaceRemoved(iface);
                 }
             }
-        }
+        }*/
     }
 
     // toggled when we enter/leave the fully teathered state
