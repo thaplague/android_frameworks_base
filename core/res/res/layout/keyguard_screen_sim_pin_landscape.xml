@@ -43,6 +43,7 @@
         android:singleLine="true"
         android:ellipsize="marquee"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone"
     />
 
     <!-- displays dots as user enters pin -->

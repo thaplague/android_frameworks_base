@@ -18,6 +18,10 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Used in the status bar buttons -->
+    <string name="statusHomeButton">H</string>
+    <string name="statusBackButton">B</string>
+    <string name="statusMenuButton">M</string>
     <!-- Suffix added to a number to signify size in bytes. -->
     <string name="byteShort">B</string>
     <!-- Suffix added to a number to signify size in kilobytes. -->
@@ -253,7 +257,7 @@
     <string name="contentServiceTooManyDeletesNotificationDesc">Too many <xliff:g id="content_type">%s</xliff:g> deletes.</string>
 
     <!-- If MMS discovers there isn't much space left on the device, it will show a toast with this message. -->
-    <string name="low_memory">Phone storage is full! Delete some files to free space.</string>
+    <string name="low_memory">Device storage is full! Delete some files to free space.</string>
 
 
     <!-- Display name for any time a piece of data refers to the owner of the phone. For example, this could be used in place of the phone's phone number. -->
@@ -261,7 +265,7 @@
 
     <!-- Power Dialog --> <skip />
     <!-- Title for the Phone Options dialog to lock the screen, turn off the phone etc. -->
-    <string name="power_dialog">Phone options</string>
+    <string name="power_dialog">Device options</string>
     <!-- Button to turn on silent mode, within the Phone Options dialog -->
     <string name="silent_mode">Silent mode</string>
     <!-- Button to turn on the radio, within the Phone Options dialog -->
@@ -277,7 +281,7 @@
     <string name="shutdown_progress">Shutting down\u2026</string>
 
     <!-- Shutdown Confirmation Dialog.  When the user chooses to power off the phone, there will be a confirmation dialog.  This is the message. -->
-    <string name="shutdown_confirm">Your phone will shut down.</string>
+    <string name="shutdown_confirm">Your device will shut down.</string>
 
     <!-- Recent Tasks dialog: title -->
     <string name="recent_tasks_title">Recent</string>
@@ -285,7 +289,7 @@
     <string name="no_recent_tasks">No recent applications.</string>
 
     <!-- Title of the Global Actions Dialog -->
-    <string name="global_actions">Phone options</string>
+    <string name="global_actions">Device options</string>
 
     <!-- label for item that locks the phone in the phone options dialog -->
     <string name="global_action_lock">Screen lock</string>
@@ -1915,7 +1919,7 @@
     <!-- If the device is getting low on internal storage, a notification is shown to the user.  This is the title of that notification. -->
     <string name="low_internal_storage_view_title">Low on space</string>
     <!-- If the device is getting low on internal storage, a notification is shown to the user.  This is the message of that notification. -->
-    <string name="low_internal_storage_view_text">Phone storage space is getting low.</string>
+    <string name="low_internal_storage_view_text">Device storage space is getting low.</string>
 
     <!-- Preference framework strings. -->
     <string name="ok">OK</string>

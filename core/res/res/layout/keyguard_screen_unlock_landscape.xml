@@ -57,6 +57,7 @@
             android:singleLine="true"
             android:ellipsize="marquee"
             android:gravity="right|bottom"
+            android:visibility="gone"
             />
 
         <com.android.internal.widget.DigitalClock android:id="@+id/time"

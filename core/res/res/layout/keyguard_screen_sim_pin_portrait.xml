@@ -44,7 +44,8 @@
             android:gravity="center"
             android:singleLine="true"
             android:ellipsize="marquee"
-            android:textAppearance="?android:attr/textAppearanceMedium"/>
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
 
         <!-- password entry -->
         <LinearLayout

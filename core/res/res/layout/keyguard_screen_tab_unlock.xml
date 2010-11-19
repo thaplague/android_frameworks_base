@@ -42,6 +42,7 @@
         android:gravity="right|bottom"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="22sp"
+        android:visibility="gone"
         />
 
     <!-- "emergency calls only" shown when sim is missing or PUKd -->

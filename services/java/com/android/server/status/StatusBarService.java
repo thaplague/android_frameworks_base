@@ -39,6 +39,7 @@ import android.os.RemoteException;
 import android.os.Binder;
 import android.os.Handler;
 import android.os.Message;
+import android.os.ServiceManager;
 import android.os.SystemClock;
 import android.provider.Telephony;
 import android.util.Slog;
@@ -55,11 +56,13 @@ import android.view.WindowManager;
 import android.view.WindowManagerImpl;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RemoteViews;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.FrameLayout;
+import android.view.IWindowManager;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
@@ -247,7 +250,7 @@ public class StatusBarService extends IStatusBar.Stub
     // ================================================================================
     // Constructing the view
     // ================================================================================
-    private void makeStatusBarView(Context context) {
+    private void makeStatusBarView(final Context context) {
         Resources res = context.getResources();
         mRightIconSlots = res.getStringArray(com.android.internal.R.array.status_bar_icon_order);
         mRightIcons = new StatusBarIcon[mRightIconSlots.length];
@@ -267,6 +270,18 @@ public class StatusBarService extends IStatusBar.Stub
         }
 
         mStatusBarView = sb;
+
+        /*((Button)sb.findViewById(R.id.status_home)).setOnClickListener(
+        	new Button.OnClickListener() {
+                        public void onClick(View v) {
+                                Intent setIntent = new Intent(Intent.ACTION_MAIN);
+                                setIntent.addCategory(Intent.CATEGORY_HOME);
+                                setIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                context.startActivity(setIntent);
+                        }
+                }
+        );*/
+
         mStatusIcons = (LinearLayout)sb.findViewById(R.id.statusIcons);
         mNotificationIcons = (IconMerger)sb.findViewById(R.id.notificationIcons);
         mNotificationIcons.service = this;
